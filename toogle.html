@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/publick.js"></script>
+  <script src="js/jquery-1.11.0.min.js"></script>
+  <style>
+    #root{
+      width: 200px;
+      height: 200px;
+      background-color: #9f0;
+    }
+  </style>
+  <script>
+    $(function () {
+      // var flag = true;
+      // $("input").click(function(){
+      //   if(flag){
+      //     $("div").hide(2000,'swing',function() {
+      //       alert("动画执行完毕！");
+      //       flag = false;
+      //     });
+          
+      //   }else{
+      //     $("div").show(2000,'swing',function () {
+      //       alert("动画执行完毕");
+      //       flag = true;
+      //     })
+      //   }
+      // })
+        $("input").click(function () {
+          $("div").toggle(2000);  
+        })
+    })
+  </script>
+</head>
+<body>
+  <div id="root">
+    测试测试
+  </div>
+  <input type="button" value="执行动画">
+</body>
+</html>
